@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Register </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="attendance">
+        <h3>CLASS REGISTER </h3>
+        <div class="row">
+            <!-- <label>Full Name</label> -->
+            <input type="text" id="name" name="name" placeholder="name" autocomplete="given-name" required><br/>
+           
+        </div>
+        <div class="row">
+            <!-- <label>Class</label> -->
+            <input type="text" id="class" name="class" placeholder="class" autocomplete="given-name"  required><br/>
+       
+        </div>
+        <div class="row">
+            <!-- <label>Seat Number</label> -->
+            <input type="number" id="seatNo" name="Seat_no" placeholder="seat no" maxlength="5" required>
+            
+        </div>
+     
+ 
+        <div class="row" style="margin-top: 8px;">
+            <input type="submit" value="Submit" id="btn" onclick="Submit()">
+            
+        </div>
+    </form>
+<div id="result">
+ <fieldset>
+    <legend>
+        <h2> Data from Localstorage</h2>
+        <table id="table">
+            <tr>
+                <td class="col">Name</td>
+                <td class="col">class</td>
+                <td class="col">seat</td>
+            </tr>
+            <tr>
+                <td class="col"></td>
+                <td class="col"></td>
+                <td class="col"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </legend>
+ </fieldset>
+</div>
+   
+</body>
+<script src="index.js"></script>
+</html>
